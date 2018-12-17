@@ -7,7 +7,7 @@ import UserStore from "./stores/UserStore";
 import TodoContainer from "./components/TodoContainer/TodoContainer";
 import './App.css';
 
-(function startApplication(){
+function startApplication(){
     const userDataService = UserDataService();
     const todoDataService = TodoDataService();
     const userStore = UserStore(userDataService);
@@ -29,4 +29,6 @@ import './App.css';
     }
 
     loadStaticData().then(mountPage);
-})();
+}
+
+export default startApplication;

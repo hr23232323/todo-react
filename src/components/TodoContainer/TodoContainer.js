@@ -7,9 +7,9 @@ import TodoSearch from '../TodoSearch/TodoSearch';
 class TodoContainer extends Component{
   constructor(props){
     super(props);
-    this.todoStore = props.stors.todoStore;
-    this.search = this.serach.bind(this);
-    this.relaod = this.reload.bind(this);
+    this.todoStore = props.stores.todoStore;
+    this.search = this.search.bind(this);
+    this.reload = this.reload.bind(this);
 
     this.query = null;
     this.state = {

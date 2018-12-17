@@ -16,16 +16,14 @@ function TodoDataService(){
       fetch(url, {
         method: "POST",
         body: JSON.stringify(todo)
-      }).then(toJson);
+      }).then(toJson)
 
     )
   }
 
-  return(Object.freeze({
+  return Object.freeze({
     get,
-    add
-  )
-});
+    add });
 }
 
 export default TodoDataService
